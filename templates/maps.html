@@ -1,0 +1,29 @@
+<section class="mapsSectionHolder">
+	<div class="mapsPageLogoHolder">
+		<img src="images/family/rafon-pic.jpg" />
+	</div>
+	<div class="googleMapsHolder" id="map"></div>
+	<div class="geoLocationSummary">
+		<h3>Google Maps API: Geolocation</h3>
+		<h4>What is Geolocation?</h4>
+		<p>Geolocation refers to the identification of the geographic location of a user or computing device via a variety of data collection mechanisms. Typically, most geolocation services use network routing addresses or internal GPS devices to determine this location. Geolocation is a device-specific API. This means that browsers or devices must support geolocation in order to use it through web applications.</p>
+		<h4>W3C Geolocation standard</h4>
+		<p>Applications that want to perform geolocation must support the W3C Geolocation standard. Notice that the sample code above determines the user's location through the W3C navigator.geolocation property.
+Some browsers use IP addresses to detect a user's location. However, it may only provide a rough estimate of a user's location. The W3C approach is the easiest and most fully-supported so it should be prioritized over other geolocation methods.</p>
+		<p><strong>Sample code:</strong></p>
+		<pre>
+			<code>
+			if ( navigator.geolocation ) {
+		    		navigator.geolocation.getCurrentPosition(function(position){
+		    			var pos = {
+				              lat: position.coords.latitude,
+				              lng: position.coords.longitude
+				            };
+			            //where pos is your current location based on the returned coordinates
+		    		});
+		    	}
+			</code>
+		</pre>
+		<p class="centered">Continue to <a ui-sref="main"><strong>Office Hours Presentation</strong></a>.</p>
+	</div>
+</section>
