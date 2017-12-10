@@ -1,0 +1,44 @@
+<section class="mainSectionHolder">
+	<div class="mainContentLogoHolder">
+		<img src="images/family/rafon-pic-small.jpg" />
+		<div ng-include="'./menu.html'"></div>
+	</div>	
+	<div class="mainSectionSummaryHolder">
+		<ul class="personalInfoList">
+			<li>
+				<div class="sectionTitleHolder">
+					<h3>Interests</h3>
+				</div>
+				<div class="thumbnailContent  col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<ul>
+						<li>
+							<strong>Adolf Hitler</strong>
+						</li>
+						<li>
+							<strong>Kobe Bryant</strong>
+						</li>
+						<li>
+							<strong>Religion</strong>
+						</li>	
+						<li>
+							<strong>Rock music</strong>
+						</li>
+						<li>
+							<strong>Abu Bakr al-Baghdadi</strong>
+						</li>
+						<li>
+							<strong>Computer Games</strong>
+						</li>
+						<li>
+							<strong>Demons</strong>
+						</li>																																																			
+					</ul>
+				</div>
+			</li>
+			<li ui-view="gnakawView" ></li>
+			<li ui-view="realGnakawView" ></li>
+			<li ui-view="gameView" ></li>
+			<li ui-view="demonsView" ></li>
+		</ul>
+	</div>	
+</section>

@@ -1,34 +1,27 @@
 <section class="mainSectionHolder">
 	<div class="mainContentLogoHolder">
 		<img src="images/family/rafon-pic-small.jpg" />
-		<nav class="navbar navbar-inverse">
-		  <div class="container-fluid">
-		    <ul class="nav navbar-nav">
-		      <li class="dropdown">
-		        <a class="dropdown-toggle" data-toggle="dropdown">Personal Information
-		        <span class="caret"></span></a>
-		        <ul class="dropdown-menu">
-		          <li><a ui-sref="personalInfo">Wife and kids</a></li>
-		          <li><a ui-sref="personalInfo">Parents</a></li>
-		          <li><a ui-sref="personalInfo">Education</a></li>
-		        </ul>
-		      </li>
-		      <li><a ui-sref="personalInfo">Work Stuff</a></li>
-		      <li><a ui-sref="personalInfo">Miscellaneous</a></li>
-		    </ul>
-		  </div>
-		</nav>	
+		<div ng-include="'./menu.html'"></div>
 	</div>
 	<div class="mainSectionSummaryHolder">
 		<ul class="personalInfoList">
 			<li>
-				<h3>Who the hell I am?</h3>
-				<p>Well, I am <strong><i>Rafon Sandoval Amista of Maps API</i></strong>, the First of his Name, the Unbeaten, NBA 2k "God", Certified Jungler and Carry, Legit Marksman, the Immortal, the Dark Knight, Basketball Genius, no Talkshit, no Fake News, Stackoverflow Hero, and the King of CSATs.</p>
+				<div class="sectionTitleHolder">
+					<h3>Who the hell I am?</h3>
+				</div>
+				<aside class="thumbnailHolder col-lg-5 col-md-5 col-sm-5 col-xs-12">
+					<img src="images/family/me-small.jpg" />
+				</aside>
+				<div class="thumbnailContent  col-lg-7 col-md-7 col-sm-7 col-xs-12">
+					<p>- Well, I am <strong><i>Rafon Sandoval Amista of Maps API</i></strong>, the First of his Name, the Unbeaten, NBA 2k "God", Certified Jungler and Carry, Legit Marksman, the Immortal, the Dark Knight, Basketball Genius, no Talkshit, no Fake News, Stackoverflow Hero, and the King of CSATs.</p>
+					<p>- <strong>Nickname:</strong> Yaboy, Yabz, Raf</p>
+					<p>- I am the only son among three children.</p>
+					<p>- Base sa kwento ng aking Papa, favorite daw ng Mama ko si Rapunzel. So inassume na girl daw ako kasi hinde daw nag pa- ultrasound. Eh baby boy lumabas, kaya naging <strong>Rafon</strong>.</p>
+				</div>
 			</li>
-			<li>
-				<h3>When and where was the "King" born?</h3>
-				<p>25th of July, 20th Century <i>(1986)</i>. Our Lady of Lourdes Hospital, Santa Mesa, Manila </p>
-			</li>		
+			<li ui-view="birthInfoView" ></li>		
+			<li ui-view="wifeKidsView" ></li>
+			<li ui-view="educationView" ></li>	
 		</ul>
 	</div>	
 </section>

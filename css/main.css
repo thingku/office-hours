@@ -181,8 +181,122 @@ p.centered {
 	clear: both;
 	line-height: 30px;
 	font-size: 16px;
-	padding: 0 0 10px;
+	padding: 0 0 20px;
+	border-bottom: dashed 1px #DDDDDD;
+	margin: 0 0 20px;
+}
+.personalInfoList > li:last-child {
+	border: none;
 }
 .personalInfoList > li span {
 	font-weight: bold;
+}
+.personalInfoList .thumbnailHolder img {
+	width: 100%;
+	height: auto;
+	border: solid 2px #DDDDDD;
+	border-radius: 4px;
+	padding: 5px;
+}
+.sectionTitleHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.thumbnailContent {
+	padding: 10px 0;
+	font-size: 16px;
+	line-height: 24px;
+}
+.solo .thumbnailHolder img {
+	height: 500px;
+	width: auto;
+	margin: auto;
+	display: block;
+	float: none;
+}
+.thumbnailContent  > ul {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.thumbnailContent  > ul > li {
+	padding: 5px 0;
+	list-style: circle;
+	list-style-position: inside;
+}
+.thumbnailContent a {
+	color: #FF0000;
+	text-decoration: none;
+}
+.demonsContainer {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.demonThumbsHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.demonThumbsHolder > li {
+	padding: 0 5px;
+	position: relative;
+}
+.demonThumbsHolder > li img {
+	width: auto;
+	height: 250px;
+	display: block;
+	margin: auto;
+	float: none;
+}
+.demonThumbsHolder > li img.demonEffect {
+	width: auto;
+	height: 250px;
+	display: block;
+	margin: auto;
+	float: none;
+	left: 0;
+	right: 0;	
+	position: absolute;
+	top: 0;	
+	opacity: 0;
+}
+.demonThumbsHolder > li .labelName {
+	position: absolute;
+	bottom: 0px;
+	padding: 5px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	float: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 12px;
+	width: 100px;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	z-index: 100;
+}
+.thumbnailContent button {
+	width: 100%;
+	display: block;
+	line-height: 30px;
+	margin: 10px 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #444444;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+	float: left;
+}
+.hidden {
+	display: none;
 }

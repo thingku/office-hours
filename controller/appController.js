@@ -37,3 +37,31 @@ app.controller('maps', ['$scope','$compile', function( $scope,$compile ) {
     }  
 	$scope.initialize();
 }]);
+app.controller('wifeKids', ['$scope', function( $scope ) {
+	$scope.intro = "Rafon";
+}]);
+app.controller('birthinfo', ['$scope', function( $scope ) {
+	$scope.intro = "Rafon";
+}]);
+app.controller('demons', ['$scope', function( $scope ) {
+	$('#showDemons').click(function() {
+		$('#demonContainer').toggleClass('hidden');
+	});
+	$('#showDemonForm').click(function(){
+		if ( $(this).hasClass('active') ) {
+			$('.demonEffect').animate({
+				'opacity' : 0
+			}, 20000, function(){
+				$('#showDemonForm').removeClass('active');
+				$('#showDemonForm').text("Show true colors");
+			});
+		} else {
+			$('.demonEffect').animate({
+				'opacity' : 1
+			}, 20000, function(){
+				$('#showDemonForm').addClass('active');
+				$('#showDemonForm').text("Show disguise");
+			});
+		}
+	});
+}]);
